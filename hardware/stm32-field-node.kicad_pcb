@@ -1379,7 +1379,7 @@
 		(descr "USB 2.0 Type C Receptacle, GCT, 16P, top mounted, horizontal, 5A: https://gct.co/files/drawings/usb4105.pdf")
 		(tags "USB C Type-C Receptacle SMD USB 2.0 16P 16C USB4105-15-A USB4105-15-A-060 USB4105-15-A-120 USB4105-GF-A USB4105-GF-A-060 USB4105-GF-A-120")
 		(property "Reference" "J1"
-			(at 0 -5.5 0)
+			(at 0 -0.18 0)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(uuid "ae333684-9222-4d91-979b-802ec7cb45bc")
@@ -1432,14 +1432,6 @@
 		(path "/78d981e9-f865-4e8a-94a8-b0c985edd7d4")
 		(sheetname "/")
 		(sheetfile "stm32-field-node.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "SH" "A1" "A12" "B1" "B12" "A4" "A9" "B4" "B9" "A5" "B5" "A7" "B7"
-					"A6" "B6" "A8" "B8"
-				)
-			)
-		)
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1534,7 +1526,7 @@
 		)
 		(pad "A1" smd roundrect
 			(at -3.2 -3.68)
-			(size 0.6 1.15)
+			(size 0.6 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -1604,7 +1596,7 @@
 		)
 		(pad "A12" smd roundrect
 			(at 3.2 -3.68)
-			(size 0.6 1.15)
+			(size 0.6 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -1614,7 +1606,7 @@
 		)
 		(pad "B1" smd roundrect
 			(at 3.2 -3.68)
-			(size 0.6 1.15)
+			(size 0.6 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -1684,7 +1676,7 @@
 		)
 		(pad "B12" smd roundrect
 			(at -3.2 -3.68)
-			(size 0.6 1.15)
+			(size 0.6 1)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
 			(net "GND")
@@ -1760,7 +1752,7 @@
 		(descr "SOD-323")
 		(tags "SOD-323")
 		(property "Reference" "D2"
-			(at 0 -1.85 0)
+			(at -1.25 1.75 0)
 			(layer "F.SilkS")
 			(uuid "704fe7c8-4989-493f-8f99-bc48fa188622")
 			(effects
@@ -1990,7 +1982,7 @@
 			(uuid "bab98526-26c3-4610-8929-cb3398b527f9")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 -1.85 0)
+			(at -1.25 1.75 0)
 			(layer "F.Fab")
 			(uuid "12d99571-2199-4f06-a394-8a1c6b9b3271")
 			(effects
@@ -2514,7 +2506,7 @@
 		(descr "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "capacitor")
 		(property "Reference" "C1"
-			(at 0 -1.43 90)
+			(at -0.225 1.75 90)
 			(layer "F.SilkS")
 			(uuid "088c46c9-d90f-4f71-9d0c-8a01b6ddb015")
 			(effects
@@ -7457,6 +7449,54 @@
 		(uuid "f473a71e-92d6-40f1-8dd8-65c35017fc25")
 	)
 	(segment
+		(start 99.175 62.345494)
+		(end 92.249506 55.42)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/SWDIO")
+		(uuid "1d635a72-49f2-45d0-b10d-14d4cba815c0")
+	)
+	(segment
+		(start 99.175 63.7)
+		(end 99.175 62.345494)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/SWDIO")
+		(uuid "334464f3-7abd-40ce-910d-b763af3eac09")
+	)
+	(segment
+		(start 92.249506 55.42)
+		(end 77 55.42)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/SWDIO")
+		(uuid "7ba5059d-c8d5-4dea-afc2-8afca58007d7")
+	)
+	(segment
+		(start 97.8 61.575001)
+		(end 94.184999 57.96)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/SWCLK")
+		(uuid "41357c3d-0f78-4550-ad99-dbb5fa9ceee2")
+	)
+	(segment
+		(start 97.8 62.325)
+		(end 97.8 61.575001)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/SWCLK")
+		(uuid "7c597bde-8684-4814-b142-0ef6eab97bd5")
+	)
+	(segment
+		(start 94.184999 57.96)
+		(end 77 57.96)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/SWCLK")
+		(uuid "9f007895-880f-4bc8-b660-119b7025c04c")
+	)
+	(segment
 		(start 75.85 76.5)
 		(end 75.85 74.2)
 		(width 0.2)
@@ -7735,54 +7775,6 @@
 		(layer "F.Cu")
 		(net "Net-(J1-CC2)")
 		(uuid "f3d9a741-0008-4e0c-a64d-826809b51675")
-	)
-	(segment
-		(start 97.8 61.575001)
-		(end 94.184999 57.96)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "/SWCLK")
-		(uuid "41357c3d-0f78-4550-ad99-dbb5fa9ceee2")
-	)
-	(segment
-		(start 97.8 62.325)
-		(end 97.8 61.575001)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "/SWCLK")
-		(uuid "7c597bde-8684-4814-b142-0ef6eab97bd5")
-	)
-	(segment
-		(start 94.184999 57.96)
-		(end 77 57.96)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "/SWCLK")
-		(uuid "9f007895-880f-4bc8-b660-119b7025c04c")
-	)
-	(segment
-		(start 99.175 62.345494)
-		(end 92.249506 55.42)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "/SWDIO")
-		(uuid "1d635a72-49f2-45d0-b10d-14d4cba815c0")
-	)
-	(segment
-		(start 99.175 63.7)
-		(end 99.175 62.345494)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "/SWDIO")
-		(uuid "334464f3-7abd-40ce-910d-b763af3eac09")
-	)
-	(segment
-		(start 92.249506 55.42)
-		(end 77 55.42)
-		(width 0.2)
-		(layer "F.Cu")
-		(net "/SWDIO")
-		(uuid "7ba5059d-c8d5-4dea-afc2-8afca58007d7")
 	)
 	(zone
 		(net "GND")
